@@ -4,7 +4,7 @@
 
 #define ACK_CHECK_ENABLE 0x01
 
-i2c_port_t i2c_port = I2C_NUM_0;
+static i2c_port_t i2c_port = I2C_NUM_0;
 
 i2c_port_t
 as3935_i2c_set_port(i2c_port_t port)
