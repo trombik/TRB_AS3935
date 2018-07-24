@@ -45,8 +45,13 @@
 
 #define AS3935_CALIB_DONE	(1)
 #define AS3935_CALIB_OK		(0)
+
+#if !defined(AS3935_CALIB_RETRY)
 #define AS3935_CALIB_RETRY	(5)
+#endif
+#if !defined(AS3935_CALIB_DELAY_MS)
 #define AS3935_CALIB_DELAY_MS	(10)
+#endif
 
 struct as3935_i2c_config_t {
     uint8_t address;
