@@ -28,6 +28,7 @@ before_script:
   - wget https://dl.espressif.com/dl/xtensa-esp32-elf-linux64-1.22.0-80-g6c4433a-5.2.0.tar.gz
   - tar -xf xtensa-esp32-elf-linux64-1.22.0-80-g6c4433a-5.2.0.tar.gz
   - export PATH="$PATH:$PWD/xtensa-esp32-elf/bin"
+  - git --version
   - git clone --recurse-submodules --single-branch -b v3.2-dev https://github.com/espressif/esp-idf.git ~/esp-idf
 
 script:
