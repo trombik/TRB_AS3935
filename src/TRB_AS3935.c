@@ -2,11 +2,16 @@
 #include <assert.h>
 #include <errno.h>
 
+#if defined(TRB_AS3935_ESP_IDF)
+#include <esp_log.h>
+#endif
+
 #include "TRB_AS3935.h"
 
 #if defined(TRB_AS3935_ESP_IDF)
 #include "sys/esp_idf/i2c.c"
 #include "sys/esp_idf/delay.c"
+#include "sys/esp_idf/freq_count.c"
 #endif
 
 #if defined(__cplusplus)
@@ -36,9 +41,82 @@ as3935_reset()
 }
 
 int32_t
-as3935_tune_anttena(const uint8_t irq_pin)
+as3935_tune_anttena(const uint16_t irq_pin, const uint8_t freq_div)
 {
-	return ENOSYS; // TODO implement the function
+	uint8_t divider;
+	uint8_t cap_value, best_cap_value;
+	uint32_t target_count;
+	int32_t diff, best_diff;
+	int32_t r;
+	switch (freq_div) {
+	case AS3935_FREQ_DIVISION_16:
+		divider = 16;
+		break;
+	case AS3935_FREQ_DIVISION_32:
+		divider = 32;
+		break;
+	case AS3935_FREQ_DIVISION_64:
+		divider = 64;
+		break;
+	case AS3935_FREQ_DIVISION_128:
+		divider = 128;
+		break;
+	default:
+		r = EINVAL;
+		goto fail;
+	}
+	assert(divider > 0);
+	target_count = 500000 / divider;
+	target_count = target_count * AS3935_TUNING_DELAY_MS / 1000;
+
+	if ((r = as3935_set_freq_division(freq_div)) != 0)
+		goto fail;
+
+	best_cap_value = 0;
+	best_diff = 0xffff;
+	for (cap_value = 0; cap_value <= 15; cap_value++) {
+		int16_t counter;
+		/* set cap */
+		if ((r = as3935_set_capacitor(cap_value)) != 0)
+			goto fail;
+		/* display resonance */
+		if ((r = as3935_dsiplay_lco()) != 0)
+			goto fail;
+		/* wait for LCO to settle */
+		as3935_delay_ms(AS3935_TRCOCAL);
+		/* count it */
+		counter = 0;
+		if ((r = as3935_count_on_irq_pin(
+		    irq_pin,
+		    AS3935_TUNING_DELAY_MS,
+		    &counter)) != 0)
+			goto fail;
+		/* stop LCO */
+		if ((r = as3935_stop_lco()) != 0)
+			goto fail;
+		diff = target_count - counter;
+		/* in some frameworks, abs() is a macro */
+		if (diff < 0)
+			diff *= -1;
+		if (diff < best_diff) {
+			best_diff = diff;
+			best_cap_value = cap_value;
+		}
+#if defined(TRB_AS3935_ESP_IDF)
+        ESP_LOGD(__func__,
+                "target_count: %d, cap_value: %d, counter: %d,"
+                "diff: %d, best_diff: %d, best_cap_value: %d",
+                target_count, cap_value, counter, diff, best_diff,
+                best_cap_value);
+#endif
+	}
+	if ((r = as3935_set_capacitor(best_cap_value)) != 0)
+	    goto fail;
+#if defined(TRB_AS3935_ESP_IDF)
+	ESP_LOGD(__func__, "best cap value: %d", best_cap_value);
+#endif
+fail:
+	return r;
 }
 
 int32_t
@@ -303,7 +381,7 @@ as3935_set_register_bits(const uint8_t reg, const uint8_t mask, const uint8_t va
 	if ((r = as3935_i2c_read8(config.address, reg, &reg_value)) != 0)
 		goto fail;
 
-    /* clear the masked bits, and set the shifted value */
+	/* clear the masked bits, and set the shifted value */
 	reg_value &= ~mask;
 	reg_value |= value << bit_shitft_for(mask);
 

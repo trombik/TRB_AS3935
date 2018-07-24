@@ -11,7 +11,8 @@ static char component[] = "[TRB_AS3935]";
 uint8_t reg_value;
 uint32_t r;
 struct as3935_i2c_config_t config = {
-	0x00 // I2C address
+	0x00, // I2C address
+	IRQ_PIN
 };
 
 uint32_t
@@ -102,5 +103,14 @@ TEST_CASE("as3935_set_outdoor_mode", component)
 	TEST_ASSERT_EQUAL_INT32(0, as3935_set_outdoor_mode());
 	TEST_ASSERT_EQUAL_INT32(0, as3935_get_afe_mode(&reg_value));
 	TEST_ASSERT_EQUAL_UINT8(AS3935_OUTDOOR_MODE, reg_value);
+	TEST_ASSERT_EQUAL_INT32(0, i2c_driver_delete(i2c_port));
+}
+
+TEST_CASE("tuning", component)
+{
+	TEST_ASSERT_EQUAL_UINT8(0, i2c_init());
+	TEST_ASSERT_EQUAL_UINT8(0, as3935_init(config));
+	TEST_ASSERT_EQUAL_INT32(0, as3935_reset());
+	TEST_ASSERT_EQUAL_INT32(0, as3935_tune_anttena(IRQ_PIN, AS3935_FREQ_DIVISION_16));
 	TEST_ASSERT_EQUAL_INT32(0, i2c_driver_delete(i2c_port));
 }

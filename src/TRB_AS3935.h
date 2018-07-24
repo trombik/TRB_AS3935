@@ -4,6 +4,7 @@
 #if defined(TRB_AS3935_ESP_IDF)
 #include "sys/esp_idf/i2c.h"
 #include "sys/esp_idf/delay.h"
+#include "sys/esp_idf/freq_count.h"
 #endif
 
 #define AS3935_AFE_GB		0x00, 0x3E
@@ -46,16 +47,25 @@
 #define AS3935_CALIB_DONE	(1)
 #define AS3935_CALIB_OK		(0)
 
+/* The calibration of the RC oscillators starts after the LCO settles */
+#define AS3935_TRCOCAL	(2)
+
 #if !defined(AS3935_CALIB_RETRY)
 #define AS3935_CALIB_RETRY	(5)
 #endif
+
 #if !defined(AS3935_CALIB_DELAY_MS)
 #define AS3935_CALIB_DELAY_MS	(10)
 #endif
 
+#if !defined(AS3935_TUNING_DELAY_MS)
+#define AS3935_TUNING_DELAY_MS	(100)
+#endif
+
 struct as3935_i2c_config_t {
-    uint8_t address;
-};
+	uint8_t address;
+	uint16_t irq_pin;
+} as3935_i2c_config_t;
 
 /*!
  * @brief Direct commands described in page 28.
@@ -97,10 +107,11 @@ as3935_reset();
  * Tune the anttena by choosing capacitor value.
  *
  * @param[in] IRQ pin number
+ * @param[in] freq_div : Frequency Division Ratio
  * @returns Zero when successful, error code when failed
  */
 int32_t
-as3935_tune_anttena(const uint8_t irq_pin);
+as3935_tune_anttena(const uint16_t irq_pin, const uint8_t freq_div);
 
 /*!
  * Calibrate RCO
