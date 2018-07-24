@@ -6,6 +6,7 @@
 
 #if defined(TRB_AS3935_ESP_IDF)
 #include "sys/esp_idf/i2c.c"
+#include "sys/esp_idf/delay.c"
 #endif
 
 #if defined(__cplusplus)
@@ -59,7 +60,7 @@ as3935_calibrate_rco()
 		/* when in power down mode, a special procedure is required */
 		if ((r = as3935_set_register_bits(AS3935_DISP_SRCO, 1)) != 0)
 			goto fail;
-		vTaskDelay(2 / portTICK_PERIOD_MS); // XXX esp32
+		as3935_delay_ms(2);
 		if ((r = as3935_set_register_bits(AS3935_DISP_SRCO, 0)) != 0)
 			goto fail;
 	}
@@ -74,7 +75,7 @@ as3935_calibrate_rco()
 			break;
 		}
 retry:
-		vTaskDelay(AS3935_CALIB_DELAY_MS / portTICK_PERIOD_MS); // XXX esp32
+		as3935_delay_ms(AS3935_CALIB_DELAY_MS);
 	}
 	if (calib_done != true) {
 		r = ETIMEDOUT;

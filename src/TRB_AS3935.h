@@ -3,6 +3,7 @@
 
 #if defined(TRB_AS3935_ESP_IDF)
 #include "sys/esp_idf/i2c.h"
+#include "sys/esp_idf/delay.h"
 #endif
 
 #define AS3935_AFE_GB		0x00, 0x3E

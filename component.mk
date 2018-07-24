@@ -1,3 +1,2 @@
 COMPONENT_ADD_INCLUDEDIRS := src
 COMPONENT_SRCDIRS := src
-#COMPONENT_OBJS := src/sys/esp_idf/i2c.o
