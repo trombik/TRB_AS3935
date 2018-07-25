@@ -19,7 +19,7 @@ as3935_i2c_get_port()
 	return i2c_port;
 }
 
-uint32_t
+int32_t
 as3935_i2c_read8(const uint8_t addr, const uint8_t reg, uint8_t *value)
 {
 	int32_t r = 0;
@@ -57,7 +57,7 @@ fail:
 	return r;
 }
 
-uint32_t
+int32_t
 as3935_i2c_write8(const uint8_t addr, const uint8_t reg, uint8_t value)
 {
 	int32_t r = 0;
