@@ -41,6 +41,10 @@ counter_fail:
 		ESP_LOGE(__func__, "pcnt_counter_clear() failed");
 fail:
 	if (r != 0)
-		ESP_LOGE(__func__, "%s: %s", __func__, esp_err_to_name(r));
+#if defined(HAVE_ESP_ERR_TO_NAME)
+		ESP_LOGE(__func__, "PCNT failed with: %s", esp_err_to_name(r));
+#else
+		ESP_LOGE(__func__, "PCNT failed with: %d", r);
+#endif
 	return r;
 }
