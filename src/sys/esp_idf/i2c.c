@@ -47,7 +47,12 @@ as3935_i2c_read8(const uint8_t addr, const uint8_t reg, uint8_t *value)
 	} while (retry > 0 && r != ESP_OK);
 fail:
 	if (r != 0)
-		ESP_LOGE(__func__, "%s", esp_err_to_name(r));
+#if defined(HAVE_ESP_ERR_TO_NAME)
+		ESP_LOGE(__func__, "i2c_master_* failed with: %s", esp_err_to_name(r));
+#else
+		ESP_LOGE(__func__, "i2c_master_* failed with: %d", r);
+#endif
+
 	i2c_cmd_link_delete(command);
 	return r;
 }
@@ -73,7 +78,11 @@ as3935_i2c_write8(const uint8_t addr, const uint8_t reg, uint8_t value)
 			goto fail;
 		r = i2c_master_cmd_begin(i2c_port, command, 10 / portTICK_PERIOD_MS);
 		if (r != 0)
-			ESP_LOGE(__func__, "%s", esp_err_to_name(r));
+#if defined(HAVE_ESP_ERR_TO_NAME)
+			ESP_LOGE(__func__, "i2c_master_* failed with: %s", esp_err_to_name(r));
+#else
+			ESP_LOGE(__func__, "i2c_master_* failed with: %d", r);
+#endif
 		retry--;
 	} while (retry > 0 && r != ESP_OK);
 fail:

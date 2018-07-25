@@ -69,7 +69,11 @@ TEST_CASE("as3935_reset", component)
 	TEST_ASSERT_EQUAL_UINT8(0, i2c_init());
 	TEST_ASSERT_EQUAL_INT32(0, as3935_init(config));
 	r = as3935_reset();
-	TEST_ASSERT_EQUAL_INT32_MESSAGE(0, r, esp_err_to_name(r));
+#if defined(HAVE_ESP_ERR_TO_NAME)
+	TEST_ASSERT_EQUAL_UINT32_MESSAGE(0, r, esp_err_to_name(r));
+#else
+	TEST_ASSERT_EQUAL_UINT32(0, r);
+#endif
 	TEST_ASSERT_EQUAL_UINT32(0, i2c_driver_delete(i2c_port));
 }
 
@@ -78,7 +82,11 @@ TEST_CASE("as3935_i2c_read8", component)
 	TEST_ASSERT_EQUAL_UINT8(0, i2c_init());
 	TEST_ASSERT_EQUAL_INT32(0, as3935_init(config));
 	r = as3935_i2c_read8(config.address, 0x00, &reg_value);
+#if defined(HAVE_ESP_ERR_TO_NAME)
 	TEST_ASSERT_EQUAL_UINT32_MESSAGE(0, r, esp_err_to_name(r));
+#else
+	TEST_ASSERT_EQUAL_UINT32(0, r);
+#endif
 	TEST_ASSERT_EQUAL_UINT8(0b0100100, reg_value);
 	TEST_ASSERT_EQUAL_UINT32(0, i2c_driver_delete(i2c_port));
 }
