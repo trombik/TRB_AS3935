@@ -122,7 +122,7 @@ fail:
 int32_t
 as3935_calibrate_rco()
 {
-	bool calib_done;
+	uint8_t calib_done;
 	uint8_t reg_value;
 	uint8_t retry;
 	uint8_t status;
@@ -142,20 +142,20 @@ as3935_calibrate_rco()
 		if ((r = as3935_set_register_bits(AS3935_DISP_SRCO, 0)) != 0)
 			goto fail;
 	}
-	calib_done = false;
+	calib_done = 0;
 	for (retry = AS3935_CALIB_RETRY; retry > 0; retry--) {
 		if ((r = as3935_get_register_bits(AS3935_TRCO_CALIB_DONE, &trco_status)) != 0)
 			goto retry;
 		if ((r = as3935_get_register_bits(AS3935_SRCO_CALIB_DONE, &srco_status)) != 0)
 			goto retry;
 		if (trco_status == AS3935_CALIB_DONE && srco_status == AS3935_CALIB_DONE) {
-			calib_done = true;
+			calib_done = 1;
 			break;
 		}
 retry:
 		as3935_delay_ms(AS3935_CALIB_DELAY_MS);
 	}
-	if (calib_done != true) {
+	if (calib_done != 1) {
 		r = ETIMEDOUT;
 		goto fail;
 	}
