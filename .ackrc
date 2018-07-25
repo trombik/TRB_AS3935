@@ -1,0 +1,3 @@
+--ignore-dir=.piolibdeps
+--ignore-dir=.pioenvs
+--ignore-dir=build
