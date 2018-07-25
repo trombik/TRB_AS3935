@@ -3,8 +3,6 @@
 
 #if defined(TRB_AS3935_ESP_IDF)
 #include "sys/esp_idf/i2c.h"
-#include "sys/esp_idf/delay.h"
-#include "sys/esp_idf/freq_count.h"
 #endif
 
 #define AS3935_AFE_GB		0x00, 0x3E
@@ -340,5 +338,48 @@ bit_shitft_for(uint8_t mask);
 
 int32_t
 as3935_set_register_bits(const uint8_t reg, const uint8_t mask, const uint8_t value);
+
+/*!
+ * Functions each framework must implement
+ */
+
+/*!
+ * Delay N milli seconds
+ *
+ * @param[in] milli : millisec to wait
+ */
+void
+as3935_delay_ms(const uint16_t milli);
+
+/*!
+ * @brief read a byte from a register
+ *
+ * @param[in] addr : I2C address
+ * @param[in] reg : Register address
+ * @param[out] value : value to write the register value to
+ */
+int32_t
+as3935_i2c_read8(const uint8_t addr, const uint8_t reg, uint8_t *value);
+
+/*!
+ * @brief write a byte to a register
+ *
+ * @param[in] addr : I2C address
+ * @param[in] reg : Register address
+ * @param[out] value : value to write to the register
+ */
+
+int32_t
+as3935_i2c_write8(const uint8_t addr, const uint8_t reg, uint8_t value);
+
+/*!
+ * Count rising edges on IRQ pin
+ *
+ * @param[in] irq_pin : Pin number that is connected to IRQ pin of AS3935
+ * @param[in] duration_ms : Duration in milli sec to count
+ * @param[out] counter : Variable to write the result to
+ */
+int32_t
+as3935_count_on_irq_pin(const uint16_t irq_pin, const uint8_t duration_ms, int16_t *counter);
 
 #endif

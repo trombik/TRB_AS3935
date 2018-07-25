@@ -304,7 +304,7 @@ int32_t
 as3935_get_energy(uint16_t *value)
 {
 	uint8_t lsb, msb, mmsb;
-	uint32_t r;
+	int32_t r;
 
 	if ((r = as3935_get_register_bits(AS3935_S_LIG_L, &lsb)) != 0)
 		goto fail;
@@ -358,7 +358,7 @@ int32_t
 as3935_get_register_bits(const uint8_t reg, const uint8_t mask, uint8_t *value)
 {
 	uint8_t reg_value;
-	uint32_t r;
+	int32_t r;
 	r = 0;
 	if (mask == 0) {
 		r = -1;
@@ -377,7 +377,7 @@ int32_t
 as3935_set_register_bits(const uint8_t reg, const uint8_t mask, const uint8_t value)
 {
 	uint8_t reg_value;
-	uint32_t r;
+	int32_t r;
 	if ((r = as3935_i2c_read8(config.address, reg, &reg_value)) != 0)
 		goto fail;
 
