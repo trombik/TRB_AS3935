@@ -4,6 +4,7 @@
 #include <esp_err.h>
 #include <esp_log.h>
 #include <freertos/FreeRTOS.h>
+#include <freertos/task.h>
 
 esp_err_t
 as3935_count_on_irq_pin(const uint16_t irq_pin, const uint8_t duration_ms, int16_t *counter)
