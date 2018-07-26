@@ -35,3 +35,4 @@ script:
   - cppcheck --error-exitcode=1 --enable=warning,style,performance,portability -v --language=c src main
   - make defconfig
   - make
+  - PLATFORMIO_CI_SRC=examples/arduino_wire/src pio ci --lib . --project-conf examples/arduino_wire/platformio.ini
