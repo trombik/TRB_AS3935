@@ -1,0 +1,20 @@
+{
+    "name": "TRB_AS3935",
+    "platforms": [
+        "espressif32",
+        "atmelavr"
+    ],
+    "frameworks": [
+        "espidf",
+        "arduino"
+    ],
+    "build": {
+        "extraScript": "prebuild.py"
+    },
+    "dependencies": [
+        {
+            "name": "Wire",
+            "frameworks": "arduino"
+        }
+    ]
+}

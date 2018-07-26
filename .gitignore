@@ -1,4 +1,6 @@
 /build
+.pioenvs
+.piolibdeps
 sdkconfig
 sdkconfig.old
 tmp
