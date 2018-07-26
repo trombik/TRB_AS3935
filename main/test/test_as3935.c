@@ -10,7 +10,7 @@ static i2c_port_t i2c_port = I2C_NUM_1;
 static char component[] = "[TRB_AS3935]";
 uint8_t reg_value;
 uint32_t r;
-struct as3935_i2c_config_t config = {
+as3935_i2c_config_t config = {
 	0x00, // I2C address
 	IRQ_PIN
 };

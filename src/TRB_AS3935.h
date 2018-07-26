@@ -1,8 +1,14 @@
 #if !defined(_TRB_AS3935_h)
 #define _TRB_AS3935_h
 
+#include <stdint.h>
+
 #if defined(TRB_AS3935_ESP_IDF)
 #include "sys/esp_idf/i2c.h"
+#endif
+
+#if defined(__cplusplus)
+extern "C" {
 #endif
 
 #define AS3935_AFE_GB		0x00, 0x3E
@@ -60,7 +66,7 @@
 #define AS3935_TUNING_DELAY_MS	(100)
 #endif
 
-struct as3935_i2c_config_t {
+typedef struct {
 	uint8_t address;
 	uint16_t irq_pin;
 } as3935_i2c_config_t;
@@ -83,14 +89,14 @@ struct as3935_i2c_config_t {
  * @param[in] as3935_i2c_config_t
  */
 int8_t
-as3935_init(const struct as3935_i2c_config_t c);
+as3935_init(const as3935_i2c_config_t c);
 
 /*!
  * Get current configuration.
  *
  * @returns as3935_i2c_config_t
  */
-struct as3935_i2c_config_t
+as3935_i2c_config_t
 as3935_get_config();
 
 /*!
@@ -323,6 +329,12 @@ int32_t
 as3935_set_capacitor(uint8_t value);
 
 /*!
+ * Get tuning capacitor value
+ */
+int32_t
+as3935_get_capacitor(uint8_t *value);
+
+/*!
  * Return register bits masked by the given mask. The mask must not be zero. The
  * value is shifted so that the returned value equals to the bit value.
  */
@@ -381,5 +393,9 @@ as3935_i2c_write8(const uint8_t addr, const uint8_t reg, uint8_t value);
  */
 int32_t
 as3935_count_on_irq_pin(const uint16_t irq_pin, const uint8_t duration_ms, int16_t *counter);
+
+#if defined(__cplusplus)
+}
+#endif
 
 #endif
