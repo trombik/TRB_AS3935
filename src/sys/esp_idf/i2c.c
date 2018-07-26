@@ -1,3 +1,5 @@
+#if defined(TRB_AS3935_ESP_IDF)
+
 #include <driver/i2c.h>
 #include <esp_log.h>
 #include "sys/esp_idf/i2c.h"
@@ -89,3 +91,5 @@ fail:
 	i2c_cmd_link_delete(command);
 	return r;
 }
+
+#endif // TRB_AS3935_ESP_IDF

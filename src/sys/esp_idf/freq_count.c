@@ -1,3 +1,5 @@
+#if defined(TRB_AS3935_ESP_IDF)
+
 #include <driver/pcnt.h>
 #include <esp_err.h>
 #include <esp_log.h>
@@ -48,3 +50,5 @@ fail:
 #endif
 	return r;
 }
+
+#endif // TRB_AS3935_ESP_IDF
