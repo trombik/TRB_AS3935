@@ -25,7 +25,7 @@ i2c_init()
 	i2c_config.scl_io_num = GPIO_SCL;
 	i2c_config.sda_pullup_en = GPIO_PULLUP_DISABLE;
 	i2c_config.scl_pullup_en = GPIO_PULLUP_DISABLE;
-	i2c_config.master.clk_speed = 400000L; // 400KHz
+	i2c_config.master.clk_speed = 100000L; // 100KHz
 
 	TEST_ASSERT_EQUAL_INT8(0, i2c_param_config(i2c_port, &i2c_config));
 	TEST_ASSERT_EQUAL_INT8(0, i2c_driver_install(i2c_port, i2c_config.mode, 0, 0, 0));
@@ -48,7 +48,7 @@ TEST_CASE("as3935_i2c_set_port", component)
 	TEST_ASSERT(as3935_i2c_get_port() == I2C_NUM_1);
 	TEST_ASSERT(as3935_i2c_set_port(I2C_NUM_0) == I2C_NUM_0);
 	TEST_ASSERT(as3935_i2c_get_port() == I2C_NUM_0);
-	TEST_ASSERT_EQUAL_UINT32(0, i2c_driver_delete(i2c_port));
+	TEST_ASSERT_EQUAL_INT32(0, i2c_driver_delete(i2c_port));
 }
 
 TEST_CASE("as3935_get_config", component)
@@ -61,7 +61,7 @@ TEST_CASE("as3935_get_config", component)
 TEST_CASE("i2c_init", component)
 {
 	TEST_ASSERT_EQUAL_UINT8(0, i2c_init());
-	TEST_ASSERT_EQUAL_UINT32(0, i2c_driver_delete(i2c_port));
+	TEST_ASSERT_EQUAL_INT32(0, i2c_driver_delete(i2c_port));
 }
 
 TEST_CASE("as3935_reset", component)
@@ -70,11 +70,11 @@ TEST_CASE("as3935_reset", component)
 	TEST_ASSERT_EQUAL_INT32(0, as3935_init(config));
 	r = as3935_reset();
 #if defined(HAVE_ESP_ERR_TO_NAME)
-	TEST_ASSERT_EQUAL_UINT32_MESSAGE(0, r, esp_err_to_name(r));
+	TEST_ASSERT_EQUAL_INT32_MESSAGE(0, r, esp_err_to_name(r));
 #else
-	TEST_ASSERT_EQUAL_UINT32(0, r);
+	TEST_ASSERT_EQUAL_INT32(0, r);
 #endif
-	TEST_ASSERT_EQUAL_UINT32(0, i2c_driver_delete(i2c_port));
+	TEST_ASSERT_EQUAL_INT32(0, i2c_driver_delete(i2c_port));
 }
 
 TEST_CASE("as3935_i2c_read8", component)
@@ -83,12 +83,12 @@ TEST_CASE("as3935_i2c_read8", component)
 	TEST_ASSERT_EQUAL_INT32(0, as3935_init(config));
 	r = as3935_i2c_read8(config.address, 0x00, &reg_value);
 #if defined(HAVE_ESP_ERR_TO_NAME)
-	TEST_ASSERT_EQUAL_UINT32_MESSAGE(0, r, esp_err_to_name(r));
+	TEST_ASSERT_EQUAL_INT32_MESSAGE(0, r, esp_err_to_name(r));
 #else
-	TEST_ASSERT_EQUAL_UINT32(0, r);
+	TEST_ASSERT_EQUAL_INT32(0, r);
 #endif
 	TEST_ASSERT_EQUAL_UINT8(0b0100100, reg_value);
-	TEST_ASSERT_EQUAL_UINT32(0, i2c_driver_delete(i2c_port));
+	TEST_ASSERT_EQUAL_INT32(0, i2c_driver_delete(i2c_port));
 }
 
 TEST_CASE("as3935_get_register_bits", component)
