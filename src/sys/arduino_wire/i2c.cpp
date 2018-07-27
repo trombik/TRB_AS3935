@@ -16,7 +16,7 @@ as3935_i2c_read8(const uint8_t addr, const uint8_t reg, uint8_t *value)
 	Wire.beginTransmission(addr);
 	/* write register address */
 	if ((r = Wire.write(reg)) != 1) {
-		r = -1;
+		r = EIO;
 		goto fail;
 	}
 	/* read the values with repeated start, and end the transaction with stop
@@ -24,7 +24,7 @@ as3935_i2c_read8(const uint8_t addr, const uint8_t reg, uint8_t *value)
 	if ((r = Wire.endTransmission(WITH_REPEATED_START)) != 0)
 		goto fail;
 	if (Wire.requestFrom(addr, length, WITH_STOP_BIT) != 1) {
-		r = -1;
+		r = EIO;
 		goto fail;
 	}
 	*value = Wire.read();
@@ -42,12 +42,12 @@ as3935_i2c_write8(const uint8_t addr, const uint8_t reg, const uint8_t value)
 	Wire.beginTransmission(addr);
 	/* write register address */
 	if ((r = Wire.write(reg)) != 1) {
-		r = -1;
+		r = EIO;
 		goto fail;
 	}
 	/* write values */
 	if ((r = Wire.write(&value, length)) != 1) {
-		r = -1;
+		r = EIO;
 		goto fail;
 	}
 	/* end end transaction */

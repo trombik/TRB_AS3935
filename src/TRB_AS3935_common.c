@@ -359,7 +359,7 @@ as3935_get_register_bits(const uint8_t reg, const uint8_t mask, uint8_t *value)
 	int32_t r;
 	r = 0;
 	if (mask == 0) {
-		r = -1;
+		r = EINVAL;
 		goto fail;
 	}
 	if ((r = as3935_i2c_read8(config.address, reg, &reg_value)) != 0)
