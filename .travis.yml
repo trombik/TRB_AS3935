@@ -22,7 +22,10 @@ addons:
 
 install:
   - pip install -U platformio
-  - platformio update
+  # needs the latest pio for the following issue
+  # https://github.com/platformio/platformio-core/issues/1735
+  - pio upgrade --dev
+  - pio update
 
 before_script:
   - wget https://dl.espressif.com/dl/xtensa-esp32-elf-linux64-1.22.0-80-g6c4433a-5.2.0.tar.gz
@@ -36,3 +39,4 @@ script:
   - make defconfig
   - make
   - PLATFORMIO_CI_SRC=examples/arduino_wire/src pio ci --lib . --project-conf examples/arduino_wire/platformio.ini
+  - PLATFORMIO_CI_SRC=examples/esp_idf/src pio ci --lib . --project-conf examples/esp_idf/platformio.ini
