@@ -51,6 +51,10 @@ extern "C" {
 #define AS3935_CALIB_DONE	(1)
 #define AS3935_CALIB_OK		(0)
 
+#define AS3935_INT_NH	(0b0001) /**<  Noise level too high */
+#define AS3935_INT_D	(0b0100) /**< Disturber detected */
+#define AS3935_INT_L	(0b1000) /**<  Lightning interrupt */
+
 /* The calibration of the RC oscillators starts after the LCO settles */
 #define AS3935_TRCOCAL	(2)
 
