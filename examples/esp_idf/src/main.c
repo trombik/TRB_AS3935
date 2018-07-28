@@ -4,8 +4,8 @@
 #include <driver/i2c.h>
 #include <esp_err.h>
 #include <esp_log.h>
-#include "driver/gpio.h"
-#include <sdkconfig.h>
+#include <driver/gpio.h>
+#include "sdkconfig.h"
 
 #include <TRB_AS3935.h>
 
@@ -75,7 +75,7 @@ task_handle_irq(void * pvParameters)
 		uint8_t distance, reason;
 
 		/* suspend until an event occurs */
-		ESP_LOGI(__func__, "suspending...");
+		ESP_LOGI(__func__, "Suspending...");
 		vTaskSuspend(NULL);
 		ESP_LOGI(__func__, "Waked up");
 
@@ -125,7 +125,7 @@ app_main(void)
 	TaskHandle_t task_h;
 	gpio_config_t io_conf;
 
-    vTaskDelay(10000 / portTICK_PERIOD_MS);
+	vTaskDelay(10000 / portTICK_PERIOD_MS);
 
 	io_conf.intr_type = GPIO_INTR_POSEDGE; // rising edge
 	io_conf.mode = GPIO_MODE_INPUT;
