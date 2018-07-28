@@ -55,6 +55,8 @@ extern "C" {
 #define AS3935_INT_D	(0b0100) /**< Disturber detected */
 #define AS3935_INT_L	(0b1000) /**<  Lightning interrupt */
 
+#define AS3935_OUT_OF_RANGE	(0b111111) /**< Out of range, cannot estimate the distance */
+
 /* The calibration of the RC oscillators starts after the LCO settles */
 #define AS3935_TRCOCAL	(2)
 

@@ -101,7 +101,7 @@ task_handle_irq(void * pvParameters)
 			ESP_LOGE(__func__, "as3935_get_distance(): 0x%x", r);
 			continue;
 		}
-		if (distance == 0b111111) {
+		if (distance == AS3935_OUT_OF_RANGE) {
 			ESP_LOGI(__func__, "distance: Out of Range");
 		} else {
 			ESP_LOGI(__func__, "distance: %dkm", distance);
