@@ -5,3 +5,4 @@ sdkconfig
 sdkconfig.old
 tmp
 *.swp
+examples/*/src/sdkconfig.h
