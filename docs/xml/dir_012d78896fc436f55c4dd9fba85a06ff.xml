@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="dir_012d78896fc436f55c4dd9fba85a06ff" kind="dir">
+    <compoundname>src/sys/arduino_wire</compoundname>
+    <innerfile refid="delay_8cpp">delay.cpp</innerfile>
+    <innerfile refid="freq__count_8cpp">freq_count.cpp</innerfile>
+    <innerfile refid="arduino__wire_2i2c_8cpp">i2c.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/sys/arduino_wire/"/>
+  </compounddef>
+</doxygen>

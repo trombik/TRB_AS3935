@@ -1,0 +1,1634 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="TRB__AS3935_8h" kind="file" language="C++">
+    <compoundname>TRB_AS3935.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <incdepgraph>
+      <node id="6">
+        <label>stdint.h</label>
+      </node>
+      <node id="5">
+        <label>src/TRB_AS3935.h</label>
+        <link refid="TRB__AS3935_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structas3935__i2c__config__t" prot="public">as3935_i2c_config_t</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="TRB__AS3935_8h_1ac44b48b6e6d78196d46ed3b32856a17c" prot="public" static="no">
+        <name>AS3935_AFE_GB</name>
+        <initializer>0x00, 0x3E</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="16" column="9" bodyfile="src/TRB_AS3935.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="TRB__AS3935_8h_1a912fea63e3294c04b69e888c39521d35" prot="public" static="no">
+        <name>AS3935_PWD</name>
+        <initializer>0x00, 0x01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="17" column="9" bodyfile="src/TRB_AS3935.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="TRB__AS3935_8h_1a6cf34f8e879194a6b55443352d0994ea" prot="public" static="no">
+        <name>AS3935_NF_LEV</name>
+        <initializer>0x01, 0x70</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="18" column="9" bodyfile="src/TRB_AS3935.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="TRB__AS3935_8h_1a836381a51d7629026a423206a3e74fb6" prot="public" static="no">
+        <name>AS3935_WDTH</name>
+        <initializer>0x01, 0x0F</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="19" column="9" bodyfile="src/TRB_AS3935.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="TRB__AS3935_8h_1a9ae26d967d5194b60f18173b211b060d" prot="public" static="no">
+        <name>AS3935_CL_STAT</name>
+        <initializer>0x02, 0x40</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="20" column="9" bodyfile="src/TRB_AS3935.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="TRB__AS3935_8h_1a539d9a9cd92adc5aa23e5355aaa5f3c6" prot="public" static="no">
+        <name>AS3935_MIN_NUM_LIGH</name>
+        <initializer>0x02, 0x30</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="21" column="9" bodyfile="src/TRB_AS3935.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="TRB__AS3935_8h_1a6aaae3e14f26bff5b8c9961f8dcfc5e5" prot="public" static="no">
+        <name>AS3935_SREJ</name>
+        <initializer>0x02, 0x0F</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="22" column="9" bodyfile="src/TRB_AS3935.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="TRB__AS3935_8h_1ab1d70964f766e9c220ecd11091c19eda" prot="public" static="no">
+        <name>AS3935_LCO_FDIV</name>
+        <initializer>0x03, 0xC0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="23" column="9" bodyfile="src/TRB_AS3935.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="TRB__AS3935_8h_1a466939192e5953ab4b56da29d8bd1c09" prot="public" static="no">
+        <name>AS3935_MASK_DIST</name>
+        <initializer>0x03, 0x20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="24" column="9" bodyfile="src/TRB_AS3935.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="TRB__AS3935_8h_1a4057eaa56bea14981c6527ca877f5815" prot="public" static="no">
+        <name>AS3935_INT</name>
+        <initializer>0x03, 0x0F</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="25" column="9" bodyfile="src/TRB_AS3935.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="TRB__AS3935_8h_1a5c1d6b220cfe08ed09e6a071fc6e3014" prot="public" static="no">
+        <name>AS3935_S_LIG_L</name>
+        <initializer>0x04, 0xFF</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="26" column="9" bodyfile="src/TRB_AS3935.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="TRB__AS3935_8h_1a7e6ce60de0c8793e559059945874f0af" prot="public" static="no">
+        <name>AS3935_S_LIG_M</name>
+        <initializer>0x05, 0xFF</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="27" column="9" bodyfile="src/TRB_AS3935.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="TRB__AS3935_8h_1a46b153552e5849d7af7b6a92d834d4bb" prot="public" static="no">
+        <name>AS3935_S_LIG_MM</name>
+        <initializer>0x06, 0x1F</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="28" column="9" bodyfile="src/TRB_AS3935.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="TRB__AS3935_8h_1aafd54c296d6550e2c139f76c9d650440" prot="public" static="no">
+        <name>AS3935_DISTANCE</name>
+        <initializer>0x07, 0x3F</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="29" column="9" bodyfile="src/TRB_AS3935.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="TRB__AS3935_8h_1a833f982488dc56506d0a56088fa5f9e8" prot="public" static="no">
+        <name>AS3935_DISP_LCO</name>
+        <initializer>0x08, 0x80</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="30" column="9" bodyfile="src/TRB_AS3935.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="TRB__AS3935_8h_1a8ac9be100e0f5dde51e0e54842cff073" prot="public" static="no">
+        <name>AS3935_DISP_SRCO</name>
+        <initializer>0x08, 0x40</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="31" column="9" bodyfile="src/TRB_AS3935.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="TRB__AS3935_8h_1a1fafc0e624865870c63111f79acaccfa" prot="public" static="no">
+        <name>AS3935_DISP_TRCO</name>
+        <initializer>0x08, 0x20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="32" column="9" bodyfile="src/TRB_AS3935.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="TRB__AS3935_8h_1ab41e292e5e32c27c15d457aae68963db" prot="public" static="no">
+        <name>AS3935_TUN_CAP</name>
+        <initializer>0x08, 0x0F</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="33" column="9" bodyfile="src/TRB_AS3935.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="TRB__AS3935_8h_1a8652d00a9480adc6be8295defb60dd0d" prot="public" static="no">
+        <name>AS3935_TRCO_CALIB_DONE</name>
+        <initializer>0x3A, (1 &lt;&lt; 7)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="34" column="9" bodyfile="src/TRB_AS3935.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="TRB__AS3935_8h_1af1d1b552cf37f6c06c22bebb359c2761" prot="public" static="no">
+        <name>AS3935_TRCO_CALIB_NOK</name>
+        <initializer>0x3A, (1 &lt;&lt; 6)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="35" column="9" bodyfile="src/TRB_AS3935.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="TRB__AS3935_8h_1a558a6d525a8ce5ee358455d079e28731" prot="public" static="no">
+        <name>AS3935_SRCO_CALIB_DONE</name>
+        <initializer>0x3B, (1 &lt;&lt; 7)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="36" column="9" bodyfile="src/TRB_AS3935.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="TRB__AS3935_8h_1adb79e040dfa5d84487fbd4f27c3f6587" prot="public" static="no">
+        <name>AS3935_SRCO_CALIB_NOK</name>
+        <initializer>0x3B, (1 &lt;&lt; 6)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="37" column="9" bodyfile="src/TRB_AS3935.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="TRB__AS3935_8h_1a7af30907d9178d72c32baf13067d1834" prot="public" static="no">
+        <name>AS3935_ENERGY_1</name>
+        <initializer>0x04, 0xFF</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="38" column="9" bodyfile="src/TRB_AS3935.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="TRB__AS3935_8h_1afaf92d63b564acc6f1aa33219d7eccb4" prot="public" static="no">
+        <name>AS3935_ENERGY_2</name>
+        <initializer>0x05, 0xFF</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="39" column="9" bodyfile="src/TRB_AS3935.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="TRB__AS3935_8h_1a93cb1a4c5bb8775902ff6f3526cc968e" prot="public" static="no">
+        <name>AS3935_ENERGY_3</name>
+        <initializer>0x06, 0x1F</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="40" column="9" bodyfile="src/TRB_AS3935.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="TRB__AS3935_8h_1ab96ee48a289ca03d96caee2c3d2eb971" prot="public" static="no">
+        <name>AS3935_PWD_DOWN</name>
+        <initializer>(1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="42" column="9" bodyfile="src/TRB_AS3935.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="TRB__AS3935_8h_1aecf2b51633aa01ac5e4b57ef2cbdfcd5" prot="public" static="no">
+        <name>AS3935_PWD_UP</name>
+        <initializer>(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="43" column="9" bodyfile="src/TRB_AS3935.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="TRB__AS3935_8h_1a7eb85bd6eb44eab16da07aef70d27399" prot="public" static="no">
+        <name>AS3935_FREQ_DIVISION_16</name>
+        <initializer>(0b00)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="45" column="9" bodyfile="src/TRB_AS3935.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="TRB__AS3935_8h_1af8de528202ccf4291612dc267d7277f6" prot="public" static="no">
+        <name>AS3935_FREQ_DIVISION_32</name>
+        <initializer>(0b01)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="46" column="9" bodyfile="src/TRB_AS3935.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="TRB__AS3935_8h_1ad2a26e38310554a69888bbdbe27c1959" prot="public" static="no">
+        <name>AS3935_FREQ_DIVISION_64</name>
+        <initializer>(0b10)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="47" column="9" bodyfile="src/TRB_AS3935.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="TRB__AS3935_8h_1a1ebf0ad2f4d3ebf5d1ad2a55747955b6" prot="public" static="no">
+        <name>AS3935_FREQ_DIVISION_128</name>
+        <initializer>(0b11)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="48" column="9" bodyfile="src/TRB_AS3935.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="TRB__AS3935_8h_1a8ac4a4ced09b8e1dcbe3f7faca712a0c" prot="public" static="no">
+        <name>AS3935_MASK_DISTUERBER_ENABLED</name>
+        <initializer>(1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="50" column="9" bodyfile="src/TRB_AS3935.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="TRB__AS3935_8h_1a20b3fda9556f720cc166623164f48bf9" prot="public" static="no">
+        <name>AS3935_MASK_DISTUERBER_DISABLED</name>
+        <initializer>(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="51" column="9" bodyfile="src/TRB_AS3935.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="TRB__AS3935_8h_1ae9e329a0ca4da65427c40541bbbe7cf6" prot="public" static="no">
+        <name>AS3935_CALIB_DONE</name>
+        <initializer>(1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="53" column="9" bodyfile="src/TRB_AS3935.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="TRB__AS3935_8h_1afb4979338d508663618adc1545546b57" prot="public" static="no">
+        <name>AS3935_CALIB_OK</name>
+        <initializer>(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="54" column="9" bodyfile="src/TRB_AS3935.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="TRB__AS3935_8h_1ac89523699c52397ad58161705a75f642" prot="public" static="no">
+        <name>AS3935_INT_NH</name>
+        <initializer>(0b0001)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Noise level too high </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="56" column="9" bodyfile="src/TRB_AS3935.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="TRB__AS3935_8h_1acda504160945fe18e32f85ab2c84d196" prot="public" static="no">
+        <name>AS3935_INT_D</name>
+        <initializer>(0b0100)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Disturber detected </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="57" column="9" bodyfile="src/TRB_AS3935.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="TRB__AS3935_8h_1acd20a5b6d9eb88eac1ae39d576382124" prot="public" static="no">
+        <name>AS3935_INT_L</name>
+        <initializer>(0b1000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Lightning interrupt </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="58" column="9" bodyfile="src/TRB_AS3935.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="TRB__AS3935_8h_1ab3d4811a9444a690304287ba22403156" prot="public" static="no">
+        <name>AS3935_OUT_OF_RANGE</name>
+        <initializer>(0b111111)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Out of range, cannot estimate the distance </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="60" column="9" bodyfile="src/TRB_AS3935.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="TRB__AS3935_8h_1aa1c3891859b6ba61244d5814a59411e4" prot="public" static="no">
+        <name>AS3935_TRCOCAL</name>
+        <initializer>(2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="63" column="9" bodyfile="src/TRB_AS3935.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="TRB__AS3935_8h_1ab8312c4d9a6c59dcb1a1965184f27d91" prot="public" static="no">
+        <name>AS3935_CALIB_RETRY</name>
+        <initializer>(5)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="66" column="9" bodyfile="src/TRB_AS3935.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="TRB__AS3935_8h_1a0d356a2aa0929bb4d51e685f708a5c4b" prot="public" static="no">
+        <name>AS3935_CALIB_DELAY_MS</name>
+        <initializer>(10)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="70" column="9" bodyfile="src/TRB_AS3935.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="TRB__AS3935_8h_1a55ab1c1a8654be0351633449c17129df" prot="public" static="no">
+        <name>AS3935_TUNING_DELAY_MS</name>
+        <initializer>(100)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="74" column="9" bodyfile="src/TRB_AS3935.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="TRB__AS3935_8h_1abbf9f840331e47c8408bcfca80a64c2b" prot="public" static="no">
+        <name>AS3935_COMMAND_PRESET_DEFAULT</name>
+        <initializer>0x3C, 0x96</initializer>
+        <briefdescription>
+<para>Direct commands described in page 28. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="85" column="9" bodyfile="src/TRB_AS3935.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="TRB__AS3935_8h_1a1857dfe868c0dda627e2ad776bb7e40a" prot="public" static="no">
+        <name>AS3935_COMMAND_CALIB_RCO</name>
+        <initializer>0x3D, 0x96</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="86" column="9" bodyfile="src/TRB_AS3935.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="TRB__AS3935_8h_1acc6731afbd7b16b1d26e428ca89abdf5" prot="public" static="no">
+        <name>AS3935_INDOOR_MODE</name>
+        <initializer>(0b10010)</initializer>
+        <briefdescription>
+<para>Analog Front-End mode. </para>        </briefdescription>
+        <detaileddescription>
+<para>Indoor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="91" column="9" bodyfile="src/TRB_AS3935.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="TRB__AS3935_8h_1a9182dacbc120d8e70564e254b1ca0695" prot="public" static="no">
+        <name>AS3935_OUTDOOR_MODE</name>
+        <initializer>(0b01110)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Outdoor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="92" column="9" bodyfile="src/TRB_AS3935.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="TRB__AS3935_8h_1a9b6d1a3a3b367be3924370b73413d3e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int8_t</type>
+        <definition>int8_t as3935_init</definition>
+        <argsstring>(const as3935_i2c_config_t c)</argsstring>
+        <name>as3935_init</name>
+        <param>
+          <type>const <ref refid="structas3935__i2c__config__t" kindref="compound">as3935_i2c_config_t</ref></type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Intialize the configuration.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in"><ref refid="structas3935__i2c__config__t" kindref="compound">as3935_i2c_config_t</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="100" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="TRB__AS3935_8h_1a8c8e225a9a014994c371185c685cc905" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structas3935__i2c__config__t" kindref="compound">as3935_i2c_config_t</ref></type>
+        <definition>as3935_i2c_config_t as3935_get_config</definition>
+        <argsstring>()</argsstring>
+        <name>as3935_get_config</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get current configuration.</para><para><simplesect kind="return"><para><ref refid="structas3935__i2c__config__t" kindref="compound">as3935_i2c_config_t</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="108" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="TRB__AS3935_8h_1a121647d07ca998db4d1751057aeab4d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t as3935_reset</definition>
+        <argsstring>()</argsstring>
+        <name>as3935_reset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reset the device to default.</para><para><simplesect kind="return"><para>Zero when successful, error code when failed </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="116" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="TRB__AS3935_8h_1ad25ff4ca9e56f4717af60c7bf8de459f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t as3935_tune_anttena</definition>
+        <argsstring>(const uint16_t irq_pin, const uint8_t freq_div)</argsstring>
+        <name>as3935_tune_anttena</name>
+        <param>
+          <type>const uint16_t</type>
+          <declname>irq_pin</declname>
+        </param>
+        <param>
+          <type>const uint8_t</type>
+          <declname>freq_div</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Tune the anttena by choosing capacitor value.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">IRQ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pin number </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">freq_div</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Frequency Division Ratio </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Zero when successful, error code when failed </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="126" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="TRB__AS3935_8h_1ade6b43db4fd3dc09abde5718d8ed3249" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t as3935_calibrate_rco</definition>
+        <argsstring>()</argsstring>
+        <name>as3935_calibrate_rco</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calibrate RCO</para><para><simplesect kind="return"><para>Zero when successful, error code when failed </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="134" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="TRB__AS3935_8h_1acf1e96ad08bb3b1311fd07219dd553c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t as3935_get_afe_mode</definition>
+        <argsstring>(uint8_t *value)</argsstring>
+        <name>as3935_get_afe_mode</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get AFE mode, AS3935_OUTDOOR_MODE or AS3935_INDOOR_MODE.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">Pointer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of variable to write the value to </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Zero when successful, error code when failed </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="143" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="TRB__AS3935_8h_1ab2e1b53be2ba387bc8d99b03498ff646" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t as3935_set_indoor_mode</definition>
+        <argsstring>()</argsstring>
+        <name>as3935_set_indoor_mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set AFE to indoor mode.</para><para><simplesect kind="return"><para>Zero when successful, error code when failed </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="151" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="TRB__AS3935_8h_1adb0dc18e7ced9a3fa06ac5bbfb32426e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t as3935_set_outdoor_mode</definition>
+        <argsstring>()</argsstring>
+        <name>as3935_set_outdoor_mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set AFE to outdoor mode.</para><para><simplesect kind="return"><para>Zero when successful, error code when failed </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="159" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="TRB__AS3935_8h_1a9b8b62261af721fabf2080b7f95c9929" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t as3935_set_noise_floor_level</definition>
+        <argsstring>(const uint8_t value)</argsstring>
+        <name>as3935_set_noise_floor_level</name>
+        <param>
+          <type>const uint8_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set noise floor level.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">Noise</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>floor level </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="167" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="TRB__AS3935_8h_1a75d8f4383d6c847c773ab4746aceb1f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t as3935_get_noise_floor_level</definition>
+        <argsstring>(uint8_t *value)</argsstring>
+        <name>as3935_get_noise_floor_level</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get noise floow level.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">Pointer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>to valiable to write the result to. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="175" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="TRB__AS3935_8h_1a19411e1eb70123c6bfdae2dae8eeeb65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t as3935_get_power_mode</definition>
+        <argsstring>(uint8_t *value)</argsstring>
+        <name>as3935_get_power_mode</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the current power mode.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">Pointer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>to valiable to write the result to. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Zero when successful, error code when failed </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="184" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="TRB__AS3935_8h_1a4dcc593dc4a2b039d700993c8eee2227" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t as3935_get_watchdog_threshold</definition>
+        <argsstring>(uint8_t *value)</argsstring>
+        <name>as3935_get_watchdog_threshold</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the current watchdog threshold.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">Pointer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>to valiable to write the result to. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Zero when successful, error code when failed </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="192" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="TRB__AS3935_8h_1a4491d2134be43a174953062c96956f7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t as3935_set_watchdog_threshold</definition>
+        <argsstring>(uint8_t value)</argsstring>
+        <name>as3935_set_watchdog_threshold</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set watchdog threshold.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">watchdog</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>threshold </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Zero when successful, error code when failed </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="201" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="TRB__AS3935_8h_1a45109dc7e2c6b227dfd6d2656b25f615" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t as3935_clear_stats</definition>
+        <argsstring>()</argsstring>
+        <name>as3935_clear_stats</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Clear statistic data in memory</para><para><simplesect kind="return"><para>Zero when successful, error code when failed </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="209" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="TRB__AS3935_8h_1a698315c6a55f2e9e93397e49cd7a771f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t as3935_set_min_lightning</definition>
+        <argsstring>(const uint8_t value)</argsstring>
+        <name>as3935_set_min_lightning</name>
+        <param>
+          <type>const uint8_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set minimum number of lightnings</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of lightnings </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Zero when successful, error code when failed </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="218" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="TRB__AS3935_8h_1a1c3616b06e2a44cf098b0edb43543756" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t as3935_get_min_lightning</definition>
+        <argsstring>(uint8_t *value)</argsstring>
+        <name>as3935_get_min_lightning</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the current minimum number of lightnings</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">Pointer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of variable to write the value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Zero when successful, error code when failed </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="227" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="TRB__AS3935_8h_1ad58e1f95735061adc74f4f11d1c5323c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t as3935_set_spike_rejection</definition>
+        <argsstring>(const uint8_t value)</argsstring>
+        <name>as3935_set_spike_rejection</name>
+        <param>
+          <type>const uint8_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set spike rejection setting. See page 31, Signal Validation.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">signal</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>rejection value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Zero when successful, error code when failed </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="236" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="TRB__AS3935_8h_1a1cbb783de0286ad04aac34db2a43a824" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t as3935_get_spike_rejection</definition>
+        <argsstring>(uint8_t *value)</argsstring>
+        <name>as3935_get_spike_rejection</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get current spike rejection value.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">Pointer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of variable to write the value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Zero when successful, error code when failed </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="245" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="TRB__AS3935_8h_1a1f1da399ee931066b26cf815146e4b17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t as3935_set_freq_division</definition>
+        <argsstring>(const uint8_t value)</argsstring>
+        <name>as3935_set_freq_division</name>
+        <param>
+          <type>const uint8_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set Frequency Division Ratio for the Antenna Tuning.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">Value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>to set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Zero when successful, error code when failed </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="254" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="TRB__AS3935_8h_1ad066a731296ca385c1cd6e5ab394c8b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t as3935_get_freq_division</definition>
+        <argsstring>(uint8_t *value)</argsstring>
+        <name>as3935_get_freq_division</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get Frequency Division Ratio for the Antenna Tuning</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">Pointer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of variable to write the value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Zero when successful, error code when failed </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="263" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="TRB__AS3935_8h_1a7a9660f5f2760eedff09c64266781842" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t as3935_get_mask_disturber</definition>
+        <argsstring>(uint8_t *value)</argsstring>
+        <name>as3935_get_mask_disturber</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get current value of mask disturber.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">Pointer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of variable to write the value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Zero when successful, error code when failed </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="272" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="TRB__AS3935_8h_1a9587f3bac30d1645be1053db54273292" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t as3935_enable_mask_disturber</definition>
+        <argsstring>()</argsstring>
+        <name>as3935_enable_mask_disturber</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable mask disturber</para><para><simplesect kind="return"><para>Zero when successful, error code when failed </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="280" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="TRB__AS3935_8h_1a837ba9a08b679777c8941a2a964f27bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t as3935_disable_mask_disturber</definition>
+        <argsstring>()</argsstring>
+        <name>as3935_disable_mask_disturber</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Disable mask disturber.</para><para><simplesect kind="return"><para>Zero when successful, error code when failed </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="288" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="TRB__AS3935_8h_1a7465669572d0b00df0c138439f668950" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t as3935_get_interrupt_reason</definition>
+        <argsstring>(uint8_t *value)</argsstring>
+        <name>as3935_get_interrupt_reason</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the cause of interrupt.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">Pointer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of variable to write the value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Zero when successful, error code when failed </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="297" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="TRB__AS3935_8h_1a9d296d22e5db4f1292713de20cc5485c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t as3935_get_energy</definition>
+        <argsstring>(uint16_t *value)</argsstring>
+        <name>as3935_get_energy</name>
+        <param>
+          <type>uint16_t *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get estimated energy of lightning (not implemented)</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">Pointer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of variable to write the value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Zero when successful, error code when failed </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="306" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="TRB__AS3935_8h_1aa08dd6bd3eef48343fc68377c350b5ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t as3935_get_distance</definition>
+        <argsstring>(uint8_t *value)</argsstring>
+        <name>as3935_get_distance</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get estimated distance to the storm</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">Pointer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of variable to write the value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Zero when successful, error code when failed </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="315" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="TRB__AS3935_8h_1a11e51c10422cea142cfbcc25e1fd30a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t as3935_dsiplay_lco</definition>
+        <argsstring>()</argsstring>
+        <name>as3935_dsiplay_lco</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Display LCO on IRQ pin</para><para><simplesect kind="return"><para>Zero when successful, error code when failed </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="323" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="TRB__AS3935_8h_1a71d99b21e39bf31190ae1e5c6e74e031" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t as3935_stop_lco</definition>
+        <argsstring>()</argsstring>
+        <name>as3935_stop_lco</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="331" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="TRB__AS3935_8h_1a6c6acc5766f00d8be66620e5b2ed4e56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t as3935_set_capacitor</definition>
+        <argsstring>(uint8_t value)</argsstring>
+        <name>as3935_set_capacitor</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set tuning capacitor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="337" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="TRB__AS3935_8h_1a48d80f782627eb6b18540bfce2a2fcea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t as3935_get_capacitor</definition>
+        <argsstring>(uint8_t *value)</argsstring>
+        <name>as3935_get_capacitor</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get tuning capacitor value </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="343" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="TRB__AS3935_8h_1af4a2ef322f7fb1c988d7259e495fd8e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t as3935_get_register_bits</definition>
+        <argsstring>(const uint8_t reg, const uint8_t mask, uint8_t *value)</argsstring>
+        <name>as3935_get_register_bits</name>
+        <param>
+          <type>const uint8_t</type>
+          <declname>reg</declname>
+        </param>
+        <param>
+          <type>const uint8_t</type>
+          <declname>mask</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return register bits masked by the given mask. The mask must not be zero. The value is shifted so that the returned value equals to the bit value. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="350" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="TRB__AS3935_8h_1a2c4af13ee60270fa918912a35b0e8784" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int8_t</type>
+        <definition>int8_t bit_shitft_for</definition>
+        <argsstring>(uint8_t mask)</argsstring>
+        <name>bit_shitft_for</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the number of zero in lower side of the given mask. Given the mask is 0b00001100, returns 2. The mask must not be zero. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="357" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="TRB__AS3935_8h_1a1369bb0bc90a9e9abc942be23e74fe1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t as3935_set_register_bits</definition>
+        <argsstring>(const uint8_t reg, const uint8_t mask, const uint8_t value)</argsstring>
+        <name>as3935_set_register_bits</name>
+        <param>
+          <type>const uint8_t</type>
+          <declname>reg</declname>
+        </param>
+        <param>
+          <type>const uint8_t</type>
+          <declname>mask</declname>
+        </param>
+        <param>
+          <type>const uint8_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="360" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="TRB__AS3935_8h_1a460327080f6ff4759d7bd0680085df69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void as3935_delay_ms</definition>
+        <argsstring>(const uint16_t milli)</argsstring>
+        <name>as3935_delay_ms</name>
+        <param>
+          <type>const uint16_t</type>
+          <declname>milli</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Functions each framework must implement</para><para>Delay N milli seconds</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">milli</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: millisec to wait </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="372" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="TRB__AS3935_8h_1af2a971484e34d89926b8e458ecad880e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t as3935_i2c_read8</definition>
+        <argsstring>(const uint8_t addr, const uint8_t reg, uint8_t *value)</argsstring>
+        <name>as3935_i2c_read8</name>
+        <param>
+          <type>const uint8_t</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>const uint8_t</type>
+          <declname>reg</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>read a byte from a register </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: I2C address </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">reg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Register address </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: value to write the register value to </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="382" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="TRB__AS3935_8h_1a803ff13f883dfb446de01af1b0a80d92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t as3935_i2c_write8</definition>
+        <argsstring>(const uint8_t addr, const uint8_t reg, uint8_t value)</argsstring>
+        <name>as3935_i2c_write8</name>
+        <param>
+          <type>const uint8_t</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>const uint8_t</type>
+          <declname>reg</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>write a byte to a register </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: I2C address </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">reg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Register address </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: value to write to the register </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="393" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="TRB__AS3935_8h_1a39c8a937fa375e6bc9a0048716b781c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t as3935_count_on_irq_pin</definition>
+        <argsstring>(const uint16_t irq_pin, const uint8_t duration_ms, int16_t *counter)</argsstring>
+        <name>as3935_count_on_irq_pin</name>
+        <param>
+          <type>const uint16_t</type>
+          <declname>irq_pin</declname>
+        </param>
+        <param>
+          <type>const uint8_t</type>
+          <declname>duration_ms</declname>
+        </param>
+        <param>
+          <type>int16_t *</type>
+          <declname>counter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Count rising edges on IRQ pin</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">irq_pin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Pin number that is connected to IRQ pin of AS3935 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">duration_ms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Duration in milli sec to count </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">counter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Variable to write the result to </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TRB_AS3935.h" line="403" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#if<sp/>!defined(_TRB_AS3935_h)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_TRB_AS3935_h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(TRB_AS3935_ESP_IDF)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;sys/esp_idf/i2c.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined(TRB_AS3935_ARDUINO_BRZO)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;sys/arduino_brzo/i2c.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(__cplusplus)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AS3935_AFE_GB<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00,<sp/>0x3E</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AS3935_PWD<sp/><sp/><sp/><sp/><sp/><sp/>0x00,<sp/>0x01</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AS3935_NF_LEV<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x01,<sp/>0x70</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AS3935_WDTH<sp/><sp/><sp/><sp/><sp/>0x01,<sp/>0x0F</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AS3935_CL_STAT<sp/><sp/><sp/><sp/><sp/><sp/>0x02,<sp/>0x40</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AS3935_MIN_NUM_LIGH<sp/>0x02,<sp/>0x30</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AS3935_SREJ<sp/><sp/><sp/><sp/><sp/>0x02,<sp/>0x0F</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AS3935_LCO_FDIV<sp/><sp/><sp/><sp/><sp/>0x03,<sp/>0xC0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AS3935_MASK_DIST<sp/><sp/><sp/><sp/>0x03,<sp/>0x20</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AS3935_INT<sp/><sp/><sp/><sp/><sp/><sp/>0x03,<sp/>0x0F</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AS3935_S_LIG_L<sp/><sp/><sp/><sp/><sp/><sp/>0x04,<sp/>0xFF</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AS3935_S_LIG_M<sp/><sp/><sp/><sp/><sp/><sp/>0x05,<sp/>0xFF</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AS3935_S_LIG_MM<sp/><sp/><sp/><sp/><sp/>0x06,<sp/>0x1F</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AS3935_DISTANCE<sp/><sp/><sp/><sp/><sp/>0x07,<sp/>0x3F</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AS3935_DISP_LCO<sp/><sp/><sp/><sp/><sp/>0x08,<sp/>0x80</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AS3935_DISP_SRCO<sp/><sp/><sp/><sp/>0x08,<sp/>0x40</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AS3935_DISP_TRCO<sp/><sp/><sp/><sp/>0x08,<sp/>0x20</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AS3935_TUN_CAP<sp/><sp/><sp/><sp/><sp/><sp/>0x08,<sp/>0x0F</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AS3935_TRCO_CALIB_DONE<sp/><sp/>0x3A,<sp/>(1<sp/>&lt;&lt;<sp/>7)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AS3935_TRCO_CALIB_NOK<sp/><sp/><sp/>0x3A,<sp/>(1<sp/>&lt;&lt;<sp/>6)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AS3935_SRCO_CALIB_DONE<sp/><sp/>0x3B,<sp/>(1<sp/>&lt;&lt;<sp/>7)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AS3935_SRCO_CALIB_NOK<sp/><sp/><sp/>0x3B,<sp/>(1<sp/>&lt;&lt;<sp/>6)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AS3935_ENERGY_1<sp/><sp/><sp/><sp/><sp/>0x04,<sp/>0xFF</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AS3935_ENERGY_2<sp/><sp/><sp/><sp/><sp/>0x05,<sp/>0xFF</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AS3935_ENERGY_3<sp/><sp/><sp/><sp/><sp/>0x06,<sp/>0x1F</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AS3935_PWD_DOWN<sp/>(1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AS3935_PWD_UP<sp/><sp/><sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AS3935_FREQ_DIVISION_16<sp/><sp/><sp/><sp/><sp/>(0b00)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AS3935_FREQ_DIVISION_32<sp/><sp/><sp/><sp/><sp/>(0b01)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AS3935_FREQ_DIVISION_64<sp/><sp/><sp/><sp/><sp/>(0b10)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AS3935_FREQ_DIVISION_128<sp/><sp/><sp/><sp/>(0b11)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AS3935_MASK_DISTUERBER_ENABLED<sp/><sp/>(1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AS3935_MASK_DISTUERBER_DISABLED<sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AS3935_CALIB_DONE<sp/><sp/><sp/>(1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AS3935_CALIB_OK<sp/><sp/><sp/><sp/><sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AS3935_INT_NH<sp/><sp/><sp/>(0b0001)<sp/></highlight></codeline>
+<codeline lineno="57"><highlight class="preprocessor">#define<sp/>AS3935_INT_D<sp/><sp/><sp/><sp/>(0b0100)<sp/></highlight></codeline>
+<codeline lineno="58"><highlight class="preprocessor">#define<sp/>AS3935_INT_L<sp/><sp/><sp/><sp/>(0b1000)<sp/></highlight></codeline>
+<codeline lineno="60"><highlight class="preprocessor">#define<sp/>AS3935_OUT_OF_RANGE<sp/>(0b111111)<sp/></highlight></codeline>
+<codeline lineno="62"><highlight class="preprocessor"></highlight><highlight class="comment">/*<sp/>The<sp/>calibration<sp/>of<sp/>the<sp/>RC<sp/>oscillators<sp/>starts<sp/>after<sp/>the<sp/>LCO<sp/>settles<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AS3935_TRCOCAL<sp/><sp/>(2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined(AS3935_CALIB_RETRY)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AS3935_CALIB_RETRY<sp/><sp/>(5)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined(AS3935_CALIB_DELAY_MS)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AS3935_CALIB_DELAY_MS<sp/><sp/><sp/>(10)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined(AS3935_TUNING_DELAY_MS)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AS3935_TUNING_DELAY_MS<sp/><sp/>(100)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="structas3935__i2c__config__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>address;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>irq_pin;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">}<sp/><ref refid="structas3935__i2c__config__t" kindref="compound">as3935_i2c_config_t</ref>;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="preprocessor">#define<sp/>AS3935_COMMAND_PRESET_DEFAULT<sp/><sp/><sp/>0x3C,<sp/>0x96</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AS3935_COMMAND_CALIB_RCO<sp/><sp/><sp/><sp/>0x3D,<sp/>0x96</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="preprocessor">#define<sp/>AS3935_INDOOR_MODE<sp/><sp/>(0b10010)<sp/></highlight></codeline>
+<codeline lineno="92"><highlight class="preprocessor">#define<sp/>AS3935_OUTDOOR_MODE<sp/>(0b01110)<sp/></highlight></codeline>
+<codeline lineno="99"><highlight class="preprocessor">int8_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal">as3935_init(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structas3935__i2c__config__t" kindref="compound">as3935_i2c_config_t</ref><sp/>c);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><ref refid="structas3935__i2c__config__t" kindref="compound">as3935_i2c_config_t</ref></highlight></codeline>
+<codeline lineno="108"><highlight class="normal">as3935_get_config();</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal">int32_t</highlight></codeline>
+<codeline lineno="116"><highlight class="normal">as3935_reset();</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal">int32_t</highlight></codeline>
+<codeline lineno="126"><highlight class="normal">as3935_tune_anttena(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint16_t<sp/>irq_pin,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>freq_div);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal">int32_t</highlight></codeline>
+<codeline lineno="134"><highlight class="normal">as3935_calibrate_rco();</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal">int32_t</highlight></codeline>
+<codeline lineno="143"><highlight class="normal">as3935_get_afe_mode(uint8_t<sp/>*value);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal">int32_t</highlight></codeline>
+<codeline lineno="151"><highlight class="normal">as3935_set_indoor_mode();</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal">int32_t</highlight></codeline>
+<codeline lineno="159"><highlight class="normal">as3935_set_outdoor_mode();</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal">int32_t</highlight></codeline>
+<codeline lineno="167"><highlight class="normal">as3935_set_noise_floor_level(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>value);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal">int32_t</highlight></codeline>
+<codeline lineno="175"><highlight class="normal">as3935_get_noise_floor_level(uint8_t<sp/>*value);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal">int32_t</highlight></codeline>
+<codeline lineno="184"><highlight class="normal">as3935_get_power_mode(uint8_t<sp/>*value);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal">int32_t</highlight></codeline>
+<codeline lineno="192"><highlight class="normal">as3935_get_watchdog_threshold(uint8_t<sp/>*value);</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal">int32_t</highlight></codeline>
+<codeline lineno="201"><highlight class="normal">as3935_set_watchdog_threshold(uint8_t<sp/>value);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal">int32_t</highlight></codeline>
+<codeline lineno="209"><highlight class="normal">as3935_clear_stats();</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal">int32_t</highlight></codeline>
+<codeline lineno="218"><highlight class="normal">as3935_set_min_lightning(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>value);</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal">int32_t</highlight></codeline>
+<codeline lineno="227"><highlight class="normal">as3935_get_min_lightning(uint8_t<sp/>*value);</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal">int32_t</highlight></codeline>
+<codeline lineno="236"><highlight class="normal">as3935_set_spike_rejection(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>value);</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal">int32_t</highlight></codeline>
+<codeline lineno="245"><highlight class="normal">as3935_get_spike_rejection(uint8_t<sp/>*value);</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal">int32_t</highlight></codeline>
+<codeline lineno="254"><highlight class="normal">as3935_set_freq_division(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>value);</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal">int32_t</highlight></codeline>
+<codeline lineno="263"><highlight class="normal">as3935_get_freq_division(uint8_t<sp/>*value);</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal">int32_t</highlight></codeline>
+<codeline lineno="272"><highlight class="normal">as3935_get_mask_disturber(uint8_t<sp/>*value);</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal">int32_t</highlight></codeline>
+<codeline lineno="280"><highlight class="normal">as3935_enable_mask_disturber();</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal">int32_t</highlight></codeline>
+<codeline lineno="288"><highlight class="normal">as3935_disable_mask_disturber();</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight></codeline>
+<codeline lineno="296"><highlight class="normal">int32_t</highlight></codeline>
+<codeline lineno="297"><highlight class="normal">as3935_get_interrupt_reason(uint8_t<sp/>*value);</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"></highlight></codeline>
+<codeline lineno="305"><highlight class="normal">int32_t</highlight></codeline>
+<codeline lineno="306"><highlight class="normal">as3935_get_energy(uint16_t<sp/>*value);</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"></highlight></codeline>
+<codeline lineno="314"><highlight class="normal">int32_t</highlight></codeline>
+<codeline lineno="315"><highlight class="normal">as3935_get_distance(uint8_t<sp/>*value);</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"></highlight></codeline>
+<codeline lineno="322"><highlight class="normal">int32_t</highlight></codeline>
+<codeline lineno="323"><highlight class="normal">as3935_dsiplay_lco();</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"></highlight></codeline>
+<codeline lineno="325"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="326"><highlight class="comment"><sp/>*<sp/>Stop<sp/>displaying<sp/>LCO<sp/>on<sp/>IRQ<sp/>pin</highlight></codeline>
+<codeline lineno="327"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="328"><highlight class="comment"><sp/>*<sp/>@returns<sp/>Zero<sp/>when<sp/>successful,<sp/>error<sp/>code<sp/>when<sp/>failed</highlight></codeline>
+<codeline lineno="329"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="330"><highlight class="normal">int32_t</highlight></codeline>
+<codeline lineno="331"><highlight class="normal">as3935_stop_lco();</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"></highlight></codeline>
+<codeline lineno="336"><highlight class="normal">int32_t</highlight></codeline>
+<codeline lineno="337"><highlight class="normal">as3935_set_capacitor(uint8_t<sp/>value);</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"></highlight></codeline>
+<codeline lineno="342"><highlight class="normal">int32_t</highlight></codeline>
+<codeline lineno="343"><highlight class="normal">as3935_get_capacitor(uint8_t<sp/>*value);</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"></highlight></codeline>
+<codeline lineno="349"><highlight class="normal">int32_t</highlight></codeline>
+<codeline lineno="350"><highlight class="normal">as3935_get_register_bits(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>reg,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>mask,<sp/>uint8_t<sp/>*value);</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"></highlight></codeline>
+<codeline lineno="356"><highlight class="normal">int8_t</highlight></codeline>
+<codeline lineno="357"><highlight class="normal">bit_shitft_for(uint8_t<sp/>mask);</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"></highlight></codeline>
+<codeline lineno="359"><highlight class="normal">int32_t</highlight></codeline>
+<codeline lineno="360"><highlight class="normal">as3935_set_register_bits(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>reg,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>mask,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>value);</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"></highlight></codeline>
+<codeline lineno="371"><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="372"><highlight class="normal">as3935_delay_ms(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint16_t<sp/>milli);</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"></highlight></codeline>
+<codeline lineno="381"><highlight class="normal">int32_t</highlight></codeline>
+<codeline lineno="382"><highlight class="normal">as3935_i2c_read8(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>addr,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>reg,<sp/>uint8_t<sp/>*value);</highlight></codeline>
+<codeline lineno="383"><highlight class="normal"></highlight></codeline>
+<codeline lineno="392"><highlight class="normal">int32_t</highlight></codeline>
+<codeline lineno="393"><highlight class="normal">as3935_i2c_write8(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>addr,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>reg,<sp/>uint8_t<sp/>value);</highlight></codeline>
+<codeline lineno="394"><highlight class="normal"></highlight></codeline>
+<codeline lineno="402"><highlight class="normal">int32_t</highlight></codeline>
+<codeline lineno="403"><highlight class="normal">as3935_count_on_irq_pin(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint16_t<sp/>irq_pin,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>duration_ms,<sp/>int16_t<sp/>*counter);</highlight></codeline>
+<codeline lineno="404"><highlight class="normal"></highlight></codeline>
+<codeline lineno="405"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(__cplusplus)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="406"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="407"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="408"><highlight class="normal"></highlight></codeline>
+<codeline lineno="409"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="src/TRB_AS3935.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="dir_324b779dec9e734be519eebd3929a069" kind="dir">
+    <compoundname>src/sys/arduino_brzo</compoundname>
+    <innerfile refid="arduino__brzo_2i2c_8h">i2c.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/sys/arduino_brzo/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="arduino__brzo_2i2c_8h" kind="file" language="C++">
+    <compoundname>i2c.h</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="arduino__brzo_2i2c_8h_1ade178a16ea1b92596b4a3b706bc4bbd5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t as3935_brzo_get_scl_freq</definition>
+        <argsstring>()</argsstring>
+        <name>as3935_brzo_get_scl_freq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sys/arduino_brzo/i2c.h" line="6" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="arduino__brzo_2i2c_8h_1aba9ab2bf2414b48f8644cd9e66c0b0ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t as3935_brzo_set_scl_freq</definition>
+        <argsstring>(const uint16_t freq)</argsstring>
+        <name>as3935_brzo_set_scl_freq</name>
+        <param>
+          <type>const uint16_t</type>
+          <declname>freq</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sys/arduino_brzo/i2c.h" line="9" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="arduino__brzo_2i2c_8h_1af2a971484e34d89926b8e458ecad880e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t as3935_i2c_read8</definition>
+        <argsstring>(const uint8_t addr, const uint8_t reg, uint8_t *value)</argsstring>
+        <name>as3935_i2c_read8</name>
+        <param>
+          <type>const uint8_t</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>const uint8_t</type>
+          <declname>reg</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sys/arduino_brzo/i2c.h" line="12" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="arduino__brzo_2i2c_8h_1a803ff13f883dfb446de01af1b0a80d92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t as3935_i2c_write8</definition>
+        <argsstring>(const uint8_t addr, const uint8_t reg, uint8_t value)</argsstring>
+        <name>as3935_i2c_write8</name>
+        <param>
+          <type>const uint8_t</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>const uint8_t</type>
+          <declname>reg</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/sys/arduino_brzo/i2c.h" line="15" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#if<sp/>defined(__cplusplus)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal">uint16_t</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">as3935_brzo_get_scl_freq();</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">uint16_t</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">as3935_brzo_set_scl_freq(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint16_t<sp/>freq);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal">int32_t</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">as3935_i2c_read8(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>addr,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>reg,<sp/>uint8_t<sp/>*value);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal">int32_t</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">as3935_i2c_write8(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>addr,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>reg,<sp/>uint8_t<sp/>value);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(__cplusplus)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="src/sys/arduino_brzo/i2c.h"/>
+  </compounddef>
+</doxygen>
