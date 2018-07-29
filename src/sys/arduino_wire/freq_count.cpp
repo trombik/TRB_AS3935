@@ -1,4 +1,4 @@
-#if defined(TRB_AS3935_ARDUINO_WIRE)
+#if defined(TRB_AS3935_ARDUINO_WIRE) || defined(TRB_AS3935_ARDUINO_BRZO)
 
 #include <Arduino.h>
 
@@ -22,4 +22,4 @@ as3935_count_on_irq_pin(const uint16_t irq_pin, const uint8_t duration_ms, int16
 	return 0;
 }
 
-#endif // TRB_AS3935_ARDUINO_WIRE
+#endif // TRB_AS3935_ARDUINO_WIRE || defined(TRB_AS3935_ARDUINO_BRZO)

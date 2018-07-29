@@ -1,7 +1,16 @@
 #include <Arduino.h>
-#include <Wire.h>
-#include <TRB_AS3935.h>
 #include <stdint.h>
+#if defined(TRB_AS3935_ARDUINO_BRZO)
+#include <brzo_i2c.h>
+#else
+#include <Wire.h>
+#endif
+
+#include <TRB_AS3935.h>
+
+#if defined(TRB_AS3935_ARDUINO_BRZO)
+#define STRETCHING_TIMEOUT_MILLI_SEC 100
+#endif
 
 void
 halt()
@@ -28,10 +37,18 @@ setup()
 	Serial.print(F("Initializing I2C... "));
 	pinMode(GPIO_SCL, INPUT_PULLUP);
 	pinMode(GPIO_SDA, INPUT_PULLUP);
+#if defined(TRB_AS3935_ARDUINO_BRZO)
+	Serial.println("Initializing I2C (brzo)");
+	brzo_i2c_setup(GPIO_SDA, GPIO_SCL, STRETCHING_TIMEOUT_MILLI_SEC);
+	as3935_brzo_set_scl_freq(100);
+#elif defined(TRB_AS3935_ARDUINO_WIRE)
 #if defined(ESP32) || defined(ESP8266)
+	Serial.println("Initializing I2C (Wire)");
 	Wire.begin(GPIO_SDA, GPIO_SCL);
 #else
+	Serial.println("Initializing I2C (Wire)");
 	Wire.begin();
+#endif
 #endif
 	Serial.println(F("Initialized."));
 

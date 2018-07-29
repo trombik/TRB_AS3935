@@ -2,6 +2,7 @@
     "name": "TRB_AS3935",
     "platforms": [
         "espressif32",
+        "espressif8266",
         "atmelavr"
     ],
     "frameworks": [
@@ -15,6 +16,11 @@
         {
             "name": "Wire",
             "frameworks": "arduino"
+        },
+        {
+            "name": "Brzo I2C",
+            "frameworks": "arduino",
+            "platforms": "espressif8266"
         }
     ]
 }
