@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.14">
+  <compound refid="namespaceprebuild" kind="namespace"><name>prebuild</name>
+    <member refid="prebuild_8py_1adfefc4e5d2d13d553c36d0b391a2fff1" kind="variable"><name>src_filter</name></member>
+    <member refid="prebuild_8py_1afaaabf994b9646723a43e24ca8f4f3d2" kind="variable"><name>SRC_FILTER</name></member>
+    <member refid="prebuild_8py_1a8ad4f4f8b42e952491e47bad17c241a8" kind="variable"><name>build_flags</name></member>
+    <member refid="prebuild_8py_1a63356625a73edb906af3bd53dfd1de65" kind="variable"><name>cppdefines</name></member>
+  </compound>
+  <compound refid="prebuild_8py" kind="file"><name>prebuild.py</name>
+  </compound>
+  <compound refid="README_8md" kind="file"><name>README.md</name>
+  </compound>
+  <compound refid="md_README" kind="page"><name>md_README</name>
+  </compound>
+</doxygenindex>

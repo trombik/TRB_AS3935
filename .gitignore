@@ -6,3 +6,5 @@ sdkconfig.old
 tmp
 *.swp
 examples/*/src/sdkconfig.h
+/vendor/
+/.bundle/

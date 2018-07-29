@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="md_README" kind="page">
+    <compoundname>md_README</compoundname>
+    <title>`TRB_AS3935`</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><ulink url="https://travis-ci.com/trombik/TRB_AS3935"></ulink></para><para>C driver for AS3935 Franklin Lightning Sensor IC. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>
