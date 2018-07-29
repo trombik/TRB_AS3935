@@ -1,4 +1,4 @@
-#if defined(TRB_AS3935_ARDUINO_WIRE)
+#if defined(TRB_AS3935_ARDUINO_WIRE) || defined(TRB_AS3935_ARDUINO_BRZO)
 
 #include <Arduino.h>
 
@@ -15,4 +15,4 @@ as3935_delay_ms(const uint16_t milli)
 	}
 }
 
-#endif // TRB_AS3935_ARDUINO_WIRE
+#endif // TRB_AS3935_ARDUINO_WIRE || defined(TRB_AS3935_ARDUINO_BRZO)

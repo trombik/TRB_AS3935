@@ -2,6 +2,7 @@
 
 #include <Arduino.h>
 #include <Wire.h>
+#include <errno.h>
 
 #define WITH_REPEATED_START	false
 

@@ -5,6 +5,8 @@
 
 #if defined(TRB_AS3935_ESP_IDF)
 #include "sys/esp_idf/i2c.h"
+#elif defined(TRB_AS3935_ARDUINO_BRZO)
+#include "sys/arduino_brzo/i2c.h"
 #endif
 
 #if defined(__cplusplus)

@@ -9,4 +9,6 @@ if "TRB_AS3935_ESP_IDF" in cppdefines:
     env.Append(SRC_FILTER=["+<TRB_AS3935.c>"])
 if "TRB_AS3935_ARDUINO_WIRE" in cppdefines:
     env.Append(SRC_FILTER=["+<TRB_AS3935.cpp>"])
+if "TRB_AS3935_ARDUINO_BRZO" in cppdefines:
+    env.Append(SRC_FILTER=["+<TRB_AS3935.cpp>"])
 #print env.get("SRC_FILTER")
